@@ -278,7 +278,28 @@ What options contracts are currently being monitored for SPY?
 ```
 mcp-options-order-flow-server
 │
-├── src/
+├── src
+│   │
+│   ├── formatters
+│   │   ├── __init__.py
+│   │   ├── context_builder.py
+│   │   └── xml_formatter.py
+│   │
+│   ├── proto
+│   │   ├── __init__.py
+│   │   ├── options_order_flow_pb2.py
+│   │   └── options_order_flow_pb2_grpc.py
+│   │
+│   ├── storage
+│   │   ├── __init__.py
+│   │   └── grpc_client.py
+│   │
+│   ├── tools
+│   │   ├── __init__.py
+│   │   ├── options_flow_tool.py
+│   │   └── options_monitoring_tool.py
+│   │
+│   └── mcp_server.py
 │
 ├── CHANGELOG.md
 ├── LICENSE
